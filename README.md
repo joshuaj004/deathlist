@@ -1,6 +1,14 @@
 # Overview
 The purpose of this program is to have a handy way to list out what you want to eat/try/do/go before you die.
 
+# How to run it
+With debug mode:
+```bash
+export FLASK_DEBUG=1
+export FLASK_APP=app.py
+flask run
+```
+
 # Components
 - Frontend
     - You should be able to interact with this through a web browser
