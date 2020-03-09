@@ -1,0 +1,6 @@
+*.swp
+__pycache__
+node_modules/
+package-lock.json
+venv/
+example.db
