@@ -59,4 +59,4 @@ I would prefer to use Python, either with Django or Flask or even serverless.
 The Backend should handle data validation and communicating with the database.
 
 ## Database
-I'm not sure what this would look like. Maybe we want to start with a database that doesn't have a schema for flexibility. As there will be few users, I am not super concerned with performance.
+Currently using DynamoDB
