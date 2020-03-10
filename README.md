@@ -20,17 +20,14 @@ flask run
         - Preferably serverless?
 
 - Database
-    - Somewhere to store the data
-    - Currently one large table
-    - I'm not sure what kind of database we want
-        - SQLite3 to start off
-        - Move to PostgreSQL when necessary/serverless
-    - Proposed Schema:
-    UUID: UUID
-    Category: List of Strings
-    Location: Coordinates or string of city/country name
-    Cost: Int
-    Resources: List 
+    - Use AWS DynamoDB free tier 
+    - Proposed Schema (DynamoDB is NoSQL, so this is subject/easy to change):
+        - UserId
+        - Name
+        - Category
+        - Location
+        - Price
+        - Resources
     
 - Testing
     - FrontEnd
