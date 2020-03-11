@@ -9,6 +9,23 @@ export FLASK_APP=app.py
 flask run
 ```
 
+# TODO
+- The frontend
+    - Build a homepage that shows what this project is
+    - Page that shows current items as a list under categories (or grouped by location)
+    - Allow users to add items
+    - Allow users to delete items
+- Handle registration
+- Handle users
+    - This will probably be with flask-login
+        - https://flask-login.readthedocs.io/en/latest/
+- Investigate if Flask-Security will be useful
+    - https://pythonhosted.org/Flask-Security/
+- Create bulk loader for adding multiple items at once
+- Handle deleting items
+- Handle deleting multiple items
+- Allow users to share links that, if logged in, will add items to their friends' lists.
+
 # Components
 - Frontend
     - You should be able to interact with this through a web browser
