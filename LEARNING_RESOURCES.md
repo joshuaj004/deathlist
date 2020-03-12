@@ -2,8 +2,11 @@
 
 ## Database
 ### DynamoDB
-https://aws.amazon.com/dynamodb/getting-started/
 I'd recommend doing the first two tutorials and then reading about the third.
+https://aws.amazon.com/dynamodb/getting-started/
+
+This allows dynamodb to be set up locally for testing
+https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html
 
 ## Backend
 ### Flask
