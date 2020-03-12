@@ -11,3 +11,9 @@ https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.h
 ## Backend
 ### Flask
 https://flask.palletsprojects.com/en/1.1.x/quickstart/
+
+Flask Dynamo
+https://flask-dynamo.readthedocs.io/en/latest/quickstart.html
+
+Flask Security
+https://pythonhosted.org/Flask-Security/
