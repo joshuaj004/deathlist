@@ -17,3 +17,7 @@ https://flask-dynamo.readthedocs.io/en/latest/quickstart.html
 
 Flask Security
 https://pythonhosted.org/Flask-Security/
+
+## Random
+### Security Talks
+https://speakerdeck.com/rdegges
