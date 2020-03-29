@@ -1,0 +1,9 @@
+<h3>Your Bucketlist</h3>
+
+<ul *ngFor="let item of deathlist">
+    <li>{{ item.name }}</li>
+</ul>
+
+<button (click)="home()">home</button>
+<!-- <button (click)="write()">write</button> -->
+<button (click)="clear()">clear</button>
