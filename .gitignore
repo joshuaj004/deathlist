@@ -45,3 +45,10 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+*.swp
+__pycache__
+package-lock.json
+venv/
+example.db
+schema.json
+dynamo/
