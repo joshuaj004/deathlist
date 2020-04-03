@@ -28,9 +28,17 @@ export class ListComponent implements OnInit {
     });
   }
 
-  // write() {
-  //   this.api.write().subscribe(response => {
-  //     console.log(response);
-  //   });
-  // }
+  write() {
+    const payload = [{
+      user_id: "chance123",
+      name: "Chance",
+      category: "unknown",
+      location: "unknown",
+      price: "0",
+      resources: "unknown"
+    }];
+    this.api.write(payload).subscribe(response => {
+      console.log(response);
+    });
+  }
 }

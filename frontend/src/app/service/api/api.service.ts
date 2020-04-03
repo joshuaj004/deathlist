@@ -18,10 +18,12 @@ export class ApiService {
 
   write(payload) {
     const requestOptions = Object.assign({}, this.requestOptions);
-    requestOptions["body"] = payload;
-    requestOptions["headers"] = {
-
+    requestOptions["body"] = {
+      data: payload
     };
+    // requestOptions["headers"] = {
+
+    // };
     return this.http.post(`${this.baseURL}write`, requestOptions);
   }
 

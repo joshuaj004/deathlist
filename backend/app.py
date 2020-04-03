@@ -26,7 +26,7 @@ def write():
     print(request.json)
     # print(request.form)
     if request.is_json:
-        obj_list = request.get_json()['data']
+        obj_list = request.get_json()['body']['data']
         with table.batch_writer() as batch:
             for data in obj_list:
                 batch.put_item(Item={
