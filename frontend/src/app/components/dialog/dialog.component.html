@@ -1,0 +1,29 @@
+<h1 mat-dialog-title>Hi Chance</h1>
+<div mat-dialog-content>
+  <form [formGroup]="itemGroup">
+    <mat-form-field appearance="outline">
+      <mat-label>Category</mat-label>
+      <input matInput formControlName="category" name="category" placeholder="Ex. Food, Travel, etc." required>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Location</mat-label>
+      <input matInput formControlName="location" name="location" placeholder="Ex. New York City, Spain, etc." required>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Price</mat-label>
+      <input matInput formControlName="price" type="number" name="price" placeholder="0.00" required>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Resources</mat-label>
+      <input matInput formControlName="resources" name="resources" placeholder="Blogs, Videos, etc.">
+    </mat-form-field>
+  </form>
+  
+</div>
+<div mat-dialog-actions>
+  <button mat-button [mat-dialog-close]="null">Nevermind</button>
+  <button mat-button (click)="addItem()" [disabled]="!itemGroup.valid">Add</button>
+</div>

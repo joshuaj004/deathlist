@@ -4,9 +4,7 @@ The purpose of this program is to have a handy way to list out what you want to 
 # How to run it
 With debug mode:
 ```bash
-export FLASK_DEBUG=1
-export FLASK_APP=app.py
-flask run
+export FLASK_DEBUG=1 && export FLASK_APP=app.py && flask run
 ```
 
 # TODO
