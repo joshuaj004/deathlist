@@ -6,6 +6,9 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class ApiService {
   public baseURL: string = "http://localhost:5000/";
+  private requestOptions = {
+
+  };
 
   constructor(private http: HttpClient) { }
 
@@ -13,10 +16,15 @@ export class ApiService {
     return this.http.get(this.baseURL);
   }
 
-  write() {
+  write(payload) {
+    const requestOptions = Object.assign({}, this.requestOptions);
+    requestOptions["body"] = {
+      data: payload
+    };
+    // requestOptions["headers"] = {
 
-    // `${this.baseURL}write`
-    // return this.http.post();
+    // };
+    return this.http.post(`${this.baseURL}write`, requestOptions);
   }
 
   clear() {

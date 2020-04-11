@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { MatSliderModule } from '@angular/material/slider';
+import { ReactiveFormsModule } from '@angular/forms'
 
 import { routing } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +11,10 @@ import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+import { DialogComponent } from './components/dialog/dialog.component';
+import { MaterialModule } from './material.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,10 @@ import { FooterComponent } from './components/footer/footer.component';
     ListComponent,
     HomeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent,
+    RegisterComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
@@ -26,9 +33,12 @@ import { FooterComponent } from './components/footer/footer.component';
     routing,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatSliderModule
+    MaterialModule,
+    ReactiveFormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  entryComponents: [DialogComponent],
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }
